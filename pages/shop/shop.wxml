@@ -23,7 +23,7 @@
   </view>
 
   <view>
-    <component-notice-bar></component-notice-bar>
+    <component-notice-bar content="{{shopCard.notice}}" loop="true" icon="{{noticeIcon}}"></component-notice-bar>
   </view>
 
 	<view class="menu">

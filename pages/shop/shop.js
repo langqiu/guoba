@@ -614,8 +614,9 @@ Page({
 
     addIcon: "/assets/shop_page/add_icon@3x.png",
     decreaseIcon: "/assets/shop_page/less@3x.png",
-    greyOrderIcon: "/assets/shop_page/grey_order@3x.png",
-    redOrderIcon: "/assets/shop_page/red_order@3x.png",
+    greyOrderIcon: "/assets/shop_page/order_grey@3x.png",
+    redOrderIcon: "/assets/shop_page/order_red@3x.png",
+    noticeIcon: "/assets/shop_page/notice.png",
 
     cartItem: "Item: ",
     cartTotalPrice: "Total Price:",
