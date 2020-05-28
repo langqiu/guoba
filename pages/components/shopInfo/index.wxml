@@ -1,0 +1,31 @@
+  <view class="shop_list">
+  	<view class="shop" bindtap="tapShop" wx:for="{{feedList}}" wx:key="index">
+  		<view class="cover">
+  			<image src="{{item.cover_image}}"></image>
+  		</view>
+  		<view class="content">
+  			<view class="name">
+  				<text>{{item.name}}</text>
+  			</view>
+  			<view class="info">
+  				<text>{{item.brief_info}}</text>
+  			</view>
+  			<view class="info">
+  				<text>{{item.delivery}}</text>
+  			</view>
+  			<view class="labels">
+  				<view class="label" wx:for="{{item.labels}}" wx:key="index" wx:for-item="label">
+  					<image src="{{label}}" mode="heightFix"></image>
+  				</view>
+  			</view>
+  			<view class="pintuan">
+  				<view class="icon">
+  					<image src="{{hotIcon}}" mode="heightFix"></image>
+  				</view>
+  				<view class="info">
+  					<text>{{item.pintuan}}人正在团购</text>
+  				</view>
+  			</view>
+  		</view>
+  	</view>
+  </view>

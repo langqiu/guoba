@@ -1,0 +1,96 @@
+.shop_list {
+  padding-left: 24rpx;
+  margin-top: 16rpx;
+  width: 458rpx;
+}
+
+.shop_list .shop {
+  display: flex;
+  margin-bottom: 32rpx;
+}
+
+.shop_list .shop .cover image {
+  width: 220rpx;
+  height: 220rpx;
+}
+
+.shop_list .shop .content {
+  position: relative;
+  padding-left: 24rpx;
+  width: 458rpx;
+  height: 220rpx;
+}
+
+.shop_list .shop .content .name {
+  width: 458rpx;
+  height: auto;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30rpx;
+  line-height: 34rpx;
+  color: rgba(0, 0, 0, 0.87);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  /* word-break: break-all; */
+  /* white-space: normal; */
+}
+
+.shop_list .shop .content .info {
+  margin-top: 4rpx;
+  width: 458rpx;
+  height: auto;
+  font-family: PingFang HK;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26rpx;
+  line-height: 34rpx;
+  color: rgba(0, 0, 0, 0.54);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.shop_list .shop .content .labels {
+  position: absolute;
+  display: flex;
+  left: 24rpx;
+  top: 152rpx;
+  width: 458rpx;
+  height: 32rpx;
+}
+
+.shop_list .shop .content .labels .label image {
+  padding-right: 12rpx;
+  height: 32rpx;
+}
+
+.shop_list .shop .content .pintuan {
+  position: absolute;
+  display: flex;
+  left: 24rpx;
+  top: 186rpx;
+  width: 458rpx;
+  height: 34rpx;
+  align-items: center;
+}
+
+.shop_list .shop .content .pintuan .icon image {
+  width: 28rpx;
+  height: 28rpx;
+}
+
+.shop_list .shop .content .pintuan .info {
+  padding-left: 4rpx;
+  height: 34rpx;
+  font-family: PingFang HK;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24rpx;
+  line-height: 34rpx;
+  color: #EE4D2D
+}

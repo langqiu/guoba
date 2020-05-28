@@ -1,0 +1,103 @@
+<!--pages/shop/shop.wxml-->
+<view class="page">
+
+	<view>
+		<component-navigation-bar fixed="true" back="true"></component-navigation-bar>
+	</view>
+
+  <view class="face">
+    <view class="avatar">
+      <image src="{{shopCard.avatar}}"></image>
+    </view>
+    <view class="content">
+      <view class="name">
+        <text>{{shopCard.name}}</text>
+      </view>
+      <view class="info">
+        <text>月销{{shopCard.sale}}</text>
+      </view>
+      <view class="info">
+        <text>{{shopCard.delivery}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view>
+    <component-notice-bar></component-notice-bar>
+  </view>
+
+	<view class="menu">
+		<scroll-view class="category" scroll-y="true">
+			<view class="item" wx:for="{{shopMenu}}" data-item-index="{{index}}" bindtap="selectCategory">
+				<view wx:if="{{index==toView}}" class="active">
+					<view class="content">
+						<text>{{item}}</text>
+					</view>
+				</view>
+				<view wx:else class="unselected">
+					<view class="content">
+						<text>{{item}}</text>
+					</view>
+				</view>
+			</view>
+		</scroll-view>
+		<scroll-view class="foods" scroll-y="true" scroll-into-view="{{toView}}">
+			<view class="box" wx:for="{{menu}}" wx:for-index="parentIndex">
+				<view class="title" id="order{{parentIndex}}">
+					<text>{{item.name}}</text>
+				</view>
+				<view class="item" wx:for="{{item.foods}}" wx:for-item="food" data-food="{{food}}">
+					<view class="icon">
+						<image src="{{food.icon}}"></image>
+					</view>
+					<view class="content">
+						<view class="name">{{food.name}}</view>
+						<view class="info">{{food.description}}</view>
+						<view class="info">
+							<text class="count">月售{{food.sellCount}}</text>
+						</view>
+						<view class="buy">
+							<view class="price">
+								<text>${{food.price}}</text>
+							</view>
+              <view class="decrease" wx:if="{{food.Count > 0}}" data-item-index="{{index}}" data-parent-index="{{parentIndex}}" catchtap="decreaseCart">
+                <image src="{{decreaseIcon}}"></image>
+              </view>
+              <view class="food-count" wx:if="{{food.Count > 0}}">
+                <text>{{food.Count}}</text>
+              </view>
+							<view class="add" data-item-index="{{index}}" data-parent-index="{{parentIndex}}" bindtap="addCart">
+								<image src="{{addIcon}}"></image>
+							</view>
+						</view>
+					</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="cart">
+    <view class="info">
+      <view class="item-count">
+        <text>{{cartItem}}{{totalCount}}</text>
+      </view>
+      <view class="total-price">
+        <text>{{cartTotalPrice}}</text>
+      </view>
+      <view class="number">
+        <text>${{totalPrice}}</text>
+      </view>
+    </view>
+    <view class="icon">
+      <image wx:if="{{totalCount > 0}}" src="{{redOrderIcon}}"></image>
+      <image else src="{{greyOrderIcon}}"></image>
+    </view>
+    
+  </view>
+
+	<!-- TODO
+  1. category垂直居中
+  2. 点击category动效
+  3. 底部购物车效果 -->
+
+</view>

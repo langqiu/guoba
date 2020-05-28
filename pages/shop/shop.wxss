@@ -1,0 +1,250 @@
+/* pages/shop/shop.wxss */
+
+/* face css */
+
+.face {
+  display: flex;
+  margin-top: 40rpx;
+  width: 100%;
+  height: 120rpx;
+  font-family: PingFang HK;
+  font-style: normal;
+}
+
+.face .avatar image{
+  padding-left: 24rpx;
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.face .content {
+  padding-left: 22rpx;
+}
+
+.face .content .name {
+  width: 300rpx;
+  height: 44rpx;
+  font-weight: 600;
+  font-size: 32rpx;
+  line-height: 44rpx;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.face .content .info {
+  width: 300rpx;
+  height: 34rpx;
+  font-weight: normal;
+  font-size: 24rpx;
+  line-height: 34rpx;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.notice-bar {
+  margin-top: 28rpx;
+  width: 750rpx;
+  height: 62rpx;
+  background: #FFF8E4;
+}
+
+/* menu css */
+
+.menu {
+  display: flex;
+  position: absolute;
+  top: 354rpx;
+  bottom: 178rpx;
+  width: 100%;
+  font-family: PingFang HK;
+  font-style: normal;
+}
+
+.menu .category {
+  width: 140rpx;
+  background: #F8F8F8;
+}
+
+.menu .category .item {
+  height: 84rpx;
+  font-size: 24rpx;
+  line-height: 34rpx;
+}
+
+.menu .category .unselected .content {
+  padding-left: 16rpx;
+  padding-right: 16rpx;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.menu .category .active {
+  height: 84rpx;
+  background: #ffffff;
+}
+
+.menu .category .active .content {
+  padding-left: 16rpx;
+  padding-right: 16rpx;
+  font-weight: 500;
+  color: #000000;
+}
+
+.menu .foods {
+  width: 610rpx;
+}
+
+.menu .foods .box {
+  padding-left: 24rpx;
+}
+
+.menu .foods .box .title {
+  height: 34rpx;
+  font-weight: 500;
+  font-size: 24rpx;
+  line-height: 34rpx;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 24rpx;
+}
+
+.menu .foods .box .item {
+  display: flex;
+  width: 100%;
+  height: 160rpx;
+  margin-bottom: 32rpx;
+}
+
+.menu .foods .box .item .icon image {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.menu .foods .box .item .content {
+  position: relative;
+  padding-left: 24rpx;
+  width: 402rpx;
+}
+
+.menu .foods .box .item .content .name {
+  width: 378rpx;
+  height: auto;
+  font-weight: 500;
+  font-size: 26rpx;
+  line-height: 36rpx;
+  color: rgba(0, 0, 0, 0.87);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.menu .foods .box .item .content .info {
+  margin-top: 4rpx;
+  width: 240rpx;
+  height: 36rpx;
+  font-weight: normal;
+  font-size: 24rpx;
+  line-height: 36rpx;
+  color: rgba(0, 0, 0, 0.54);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.menu .foods .box .item .content .buy {
+  display: flex;
+  position: relative
+}
+
+.menu .foods .box .item .content .buy .price {
+  width: 46rpx;
+  height: 40rpx;
+  font-weight: 500;
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+
+.menu .foods .box .item .content .buy .decrease image {
+  position: absolute;
+  right: 140rpx;
+  bottom: 0;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.menu .foods .box .item .content .buy .food-count {
+  position: absolute;
+  right: 48px;
+  width: 48rpx;
+  height: 48rpx;
+  right: 82rpx;
+  bottom: 0;
+  background: #F5F5F5;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.menu .foods .box .item .content .buy .food-count text {
+  width: 12rpx;
+  height: 40rpx;
+  font-weight: 500;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.menu .foods .box .item .content .buy .add image {
+  position: absolute;
+  right: 24rpx;
+  bottom: 0;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.cart {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 178rpx;
+  box-shadow: 0px -3px 8px rgba(0, 0, 0, 0.04);
+}
+
+.cart .info {
+  display: flex;
+  margin-top: 24rpx;
+  height: 42rpx;
+  font-family: PingFang HK;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24rpx;
+  line-height: 28rpx;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.cart .info .item-count {
+  padding-left: 40rpx;
+  width: 120rpx;
+  height: 28rpx;
+}
+
+.cart .info .total-price {
+  padding-left: 280rpx;
+  width: 140rpx;
+  height: 28rpx;
+}
+
+.cart .info .number {
+  padding-left: 16rpx;
+  padding-right: 40rpx;
+  margin-top: -6rpx;
+  height: 40rpx;
+  font-weight: 500;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #EE4D2D;
+}
+
+.cart .icon image {
+  padding-left: 26rpx;
+  width: 702rpx;
+  height: 86rpx;
+}

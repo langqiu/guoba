@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "component-navigation-bar": "../components/navigationBar",
+    "component-carousel": "../components/carousel",
+    "component-shop-info": "../components/shopInfo"
+  }
+}

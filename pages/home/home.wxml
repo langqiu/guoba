@@ -1,0 +1,27 @@
+<!--home.wxml-->
+<view class="page">
+
+  <view>
+    <component-navigation-bar fixed="true" title="锅巴"></component-navigation-bar>
+  </view>
+
+  <view>
+    <component-carousel bannerList="{{bannerList}}"></component-carousel>
+  </view>
+
+  <view class="feed-name">
+    <text>{{feedName}}</text>
+  </view>
+
+  <view>
+    <component-shop-info feedList="{{feedList}}"></component-shop-info>
+  </view>
+
+  <!-- TODO 
+  1. hide overflow labels
+  2. tab bar 适配iphone X
+  3. 【bug】首页banner颤抖 -->
+
+</view>
+
+

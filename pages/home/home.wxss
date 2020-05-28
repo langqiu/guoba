@@ -1,0 +1,35 @@
+/**home.wxss**/
+
+/* location */
+
+/* .location image{
+  padding-left: 24rpx;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.city {
+  padding-left: 8rpx;
+  margin-top: 4rpx;
+  width: 102rpx;
+  height: 48rpx;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 48rpx;
+} */
+
+/* feed */
+
+.feed-name {
+  padding-left: 24rpx;
+  margin-top: 24rpx;
+  width: 194rpx;
+  height: 50rpx;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36rpx;
+  line-height: 50rpx;
+}

@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/msg/msg",
+    "pages/me/me",
+    "pages/shop/shop"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "iconPath": "assets/homepage/home_grey@3x.png",
+      "selectedIconPath": "assets/homepage/home@3x.png",
+      "text": ""
+    }, {
+      "pagePath": "pages/msg/msg",
+      "iconPath": "assets/homepage/msg_grey@3x.png",
+      "selectedIconPath": "assets/homepage/msg@3x.png",
+      "text": ""
+    }, {
+      "pagePath": "pages/me/me",
+      "iconPath": "assets/homepage/me_grey@3x.png",
+      "selectedIconPath": "assets/homepage/me@3x.png",
+      "text": ""
+    }]
+  }
+}
