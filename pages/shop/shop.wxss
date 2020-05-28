@@ -4,11 +4,12 @@
 
 .face {
   display: flex;
-  margin-top: 6rpx;
+  margin-top: 22rpx;
   width: 100%;
   height: 120rpx;
   font-family: PingFang HK;
   font-style: normal;
+  margin-bottom: 28rpx;
 }
 
 .face .avatar image{
@@ -39,18 +40,15 @@
   color: rgba(0, 0, 0, 0.4);
 }
 
-/* .notice-bar {
-  margin-top: 28rpx;
-} */
-
 /* menu css */
 
 .menu {
   display: flex;
-  position: absolute;
-  top: 354rpx;
-  bottom: 178rpx;
+  /* position: absolute;
+  top: 292rpx;
+  bottom: 178rpx; */
   width: 100%;
+  height: 1082rpx;
   font-family: PingFang HK;
   font-style: normal;
 }
@@ -99,6 +97,7 @@
   font-size: 24rpx;
   line-height: 34rpx;
   color: rgba(0, 0, 0, 0.87);
+  margin-top: 26rpx;
   margin-bottom: 24rpx;
 }
 
@@ -198,8 +197,8 @@
 }
 
 .cart {
-  position: absolute;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
   width: 100%;
   height: 178rpx;
   box-shadow: 0px -3px 8px rgba(0, 0, 0, 0.04);

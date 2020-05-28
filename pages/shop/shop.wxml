@@ -22,7 +22,7 @@
     </view>
   </view>
 
-  <view>
+  <view wx:if="{{shopCard.notice != ''}}">
     <component-notice-bar content="{{shopCard.notice}}" loop="true" icon="{{noticeIcon}}"></component-notice-bar>
   </view>
 

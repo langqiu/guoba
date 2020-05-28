@@ -8,17 +8,16 @@
   background: #FFF8E4;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 20rpx;
 }
 .wux-notice-bar__icon {
+  padding-left: 24rpx;
+  padding-right: 8rpx;
   width: 32rpx;
   height: 32rpx;
-  margin-right: 20rpx
 }
 .wux-notice-bar__action {
   width: 30rpx;
   height: 30rpx;
-  margin-left: 20rpx;
 }
 .wux-notice-bar__hd {
   display: -ms-flexbox;
@@ -27,6 +26,7 @@
   align-items: center
 }
 .wux-notice-bar__bd {
+  margin-top: 16rpx;
   -ms-flex: 1;
   flex: 1;
   width: 100%;
