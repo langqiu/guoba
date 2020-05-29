@@ -22,6 +22,8 @@
     </view>
   </view>
 
+  <view class="tmp">
+
   <view wx:if="{{shopCard.notice != ''}}">
     <component-notice-bar content="{{shopCard.notice}}" loop="true" icon="{{noticeIcon}}"></component-notice-bar>
   </view>
@@ -41,7 +43,7 @@
 				</view>
 			</view>
 		</scroll-view>
-		<scroll-view class="foods" scroll-y="true" scroll-into-view="{{toView}}">
+		<scroll-view class="foods" scroll-y="true" scroll-into-view="order{{toView}}">
 			<view class="box" wx:for="{{menu}}" wx:for-index="parentIndex">
 				<view class="title" id="order{{parentIndex}}">
 					<text>{{item.name}}</text>
@@ -76,6 +78,8 @@
     </scroll-view>
   </view>
 
+  </view>
+
   <view class="cart">
     <view class="info">
       <view class="item-count">
@@ -89,15 +93,23 @@
       </view>
     </view>
     <view class="icon">
-      <image wx:if="{{totalCount > 0}}" src="{{redOrderIcon}}"></image>
-      <image else src="{{greyOrderIcon}}"></image>
+      <block wx:if="{{totalCount > 0}}">
+        <image src="{{redOrderIcon}}"></image>
+      </block>
+      <block wx:else>
+        <image src="{{greyOrderIcon}}"></image>
+      </block>
     </view>
     
   </view>
 
-	<!-- TODO
-  1. category垂直居中
-  2. 点击category动效
-  3. 底部购物车效果 -->
+  <!-- 
+    1. 缓存
+    2. 购物车实现
+    3. 滑动菜单联动到左侧
+    4. 菜单栏左侧滑动适配问题
+    5. 点击感应区扩大
+    6. 底边栏设置成白色
+   -->
 
 </view>

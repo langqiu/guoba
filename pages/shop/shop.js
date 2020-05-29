@@ -634,7 +634,7 @@ Page({
     console.log(e);
     var index = e.currentTarget.dataset.itemIndex;
     this.setData({
-      toView: "order" + index.toString()
+      toView: index
     })
   },
 
