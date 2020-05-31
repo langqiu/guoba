@@ -1,0 +1,157 @@
+.order {
+  margin-top: 22rpx;
+  width: 100%;
+}
+
+.order .item {
+  display: flex;
+  padding-left: 40rpx;
+  height: 160rpx;
+  margin-bottom: 32rpx;
+}
+
+.order .order .item .icon {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.order .item .icon image {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.order .item .content {
+  position: relative;
+  padding-left: 24rpx;
+  width: 492rpx;
+}
+
+.order .item .content .name {
+  width: 378rpx;
+  height: auto;
+  font-weight: 500;
+  font-size: 26rpx;
+  line-height: 36rpx;
+  color: rgba(0, 0, 0, 0.87);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.order .item .content .buy {
+  margin-top: 90rpx;
+  display: flex;
+  position: relative
+}
+
+.order .item .content .buy .price {
+  width: 46rpx;
+  height: 40rpx;
+  font-weight: 500;
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+
+.order .item .content .buy .decrease image {
+  position: absolute;
+  right: 140rpx;
+  bottom: 0;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.order .item .content .buy .food-count {
+  position: absolute;
+  right: 48px;
+  width: 48rpx;
+  height: 48rpx;
+  right: 82rpx;
+  bottom: 0;
+  background: #F5F5F5;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.order .item .content .buy .food-count text {
+  width: 12rpx;
+  height: 40rpx;
+  font-weight: 500;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.order .item .content .buy .add image {
+  position: absolute;
+  right: 24rpx;
+  bottom: 0;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.order .liubai {
+  height: 400rpx;
+}
+
+/* cart */
+
+.cart {
+  position: fixed;
+  width: 100%;
+  height: 178rpx;
+  bottom: constant(safe-area-inset-bottom);
+  bottom: env(safe-area-inset-bottom);
+  background: #ffffff;
+  box-shadow: 0px -3px 8px rgba(0, 0, 0, 0.04);
+}
+
+.cart .info {
+  display: flex;
+  margin-top: 24rpx;
+  height: 42rpx;
+  font-family: PingFang HK;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24rpx;
+  line-height: 28rpx;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.cart .info .item-count {
+  padding-left: 40rpx;
+  width: 120rpx;
+  height: 28rpx;
+}
+
+.cart .info .total-price {
+  padding-left: 280rpx;
+  width: 140rpx;
+  height: 28rpx;
+}
+
+.cart .info .number {
+  padding-left: 16rpx;
+  padding-right: 40rpx;
+  margin-top: -6rpx;
+  height: 40rpx;
+  font-weight: 500;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #EE4D2D;
+}
+
+.cart .icon image {
+  padding-left: 26rpx;
+  width: 702rpx;
+  height: 86rpx;
+}
+
+.cart .bottom {
+  position: fixed;
+  width: 100%;
+  height: constant(safe-area-inset-bottom);
+  height: env(safe-area-inset-bottom);
+  bottom: 0;
+  background: #ffffff;
+}

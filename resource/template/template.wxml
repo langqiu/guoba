@@ -1,0 +1,28 @@
+<template name="place-order-button">
+
+  <view class="cart">
+
+    <view class="info">
+      <view class="item-count">
+        <text>Item: {{totalCount}}</text>
+      </view>
+      <view class="total-price">
+        <text>Total Price:</text>
+      </view>
+      <view class="number">
+        <text>${{totalPrice}}</text>
+      </view>
+    </view>
+
+    <view class="icon">
+      <block wx:if="{{totalCount > 0}}">
+        <image src="/assets/shop_page/order_grey@3x.png"></image>
+      </block>
+      <block wx:else>
+        <image src="/assets/shop_page/order_red@3x.png"></image>
+      </block>
+    </view>
+
+  </view>
+
+</template>

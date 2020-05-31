@@ -1,5 +1,5 @@
 <view class='swipercontent'>
-  <swiper autoplay="true" circular="true" interval="2000" duration="500" current="{{swiperCurrent}}" bindchange="swiperChange">
+  <swiper autoplay="true" circular="true" interval="2000" duration="500" current="{{swiperCurrent}}" bindanimationfinish="swiperChange">
     <block wx:for="{{bannerList}}" wx:key="unique">
       <swiper-item>
         <image src="{{item}}"/>

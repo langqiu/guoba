@@ -1,0 +1,42 @@
+<view class="page">
+
+  <view>
+		<component-navigation-bar fixed="true" back="true" backStyle="simple"></component-navigation-bar>
+  </view>
+
+  <view class="delivery">
+		<view class="info">
+			<text>{{deliveryHead}}</text>
+		</view>
+    <component-input label="Name" placeholder="Please enter your name"></component-input>
+		<component-input label="Phone" placeholder="Please enter your contact number"></component-input>
+		<component-input label="Address" placeholder="Please enter your address"></component-input>
+  </view>
+
+
+
+  <view class="cart">
+		<view class="info">
+			<view class="item-count">
+				<text>{{cartItem}}{{totalCount}}</text>
+			</view>
+			<view class="total-price">
+				<text>{{cartTotalPrice}}</text>
+			</view>
+			<view class="number">
+				<text>${{totalPrice}}</text>
+			</view>
+		</view>
+		<view class="icon">
+			<block wx:if="{{totalCount > 0}}">
+				<image src="{{redOrderIcon}}"></image>
+			</block>
+			<block wx:else>
+				<image src="{{greyOrderIcon}}"></image>
+			</block>
+		</view>
+		<view class="bottom">
+		</view>
+	</view>
+
+</view>

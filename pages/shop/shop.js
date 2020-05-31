@@ -1,8 +1,7 @@
-// pages/shop/shop.js
-
 Page({
 
   data: {
+
     menu: [
       {
           "name": "热销榜",
@@ -624,10 +623,29 @@ Page({
     toView: 0,
     totalPrice: 0,
     totalCount: 0,
-    cartArray: []
+    cartArray: [],
+
   },
 
-  onLoad: function (options) {
+  onShow: function (options) {
+      console.log("fuck");
+    var cartArray1 = wx.getStorageSync('cart') || [];
+    if (cartArray1 != []) {
+        var totalPrice = 0;
+        var totalCount = 0;
+        for (var i = 0; i < cartArray1.length; i++) {
+            totalPrice += cartArray1[i].price * cartArray1[i].num;
+            totalCount += cartArray1[i].num;
+            this.data.menu[cartArray1[i].parentIndex].foods[cartArray1[i].index].Count = cartArray1[i].num;
+        }
+        this.setData({
+            totalPrice: totalPrice,
+            totalCount: totalCount,
+            menu: this.data.menu,
+            cartArray: cartArray1,
+            //payDesc: this.payDesc()
+        });
+    }
   },
 
   selectCategory: function (e) {
@@ -656,6 +674,12 @@ Page({
         cartArray: cartArray1,
         menu: this.data.menu
     })
+    try {
+        wx.setStorageSync('cart', cartArray1);
+        wx.setStorageSync('menu', this.data.menu);
+    } catch(e) {
+        console.log(e);
+    }
     this.calTotalPrice();
     this.setData({
         payDesc: this.payDesc()
@@ -700,6 +724,12 @@ Page({
         cartArray: cartArray1,
         menu: this.data.menu
     })
+    try {
+        wx.setStorageSync('cart', cartArray1);
+        wx.setStorageSync('menu', this.data.menu);
+    } catch(e) {
+        console.log(e);
+    }
     this.calTotalPrice()
     this.setData({
         payDesc: this.payDesc(),
@@ -782,5 +812,11 @@ Page({
     this.setData({
         status: showtype,
     });
+  },
+  
+  tapPlaceOrder: function() {
+    wx.navigateTo({
+        url: '/pages/place_order/place_order'
+    })
   }
 })

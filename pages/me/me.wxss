@@ -1,1 +1,125 @@
 /* pages/me/me.wxss */
+
+.face {
+  display: flex;
+  margin-top: 22rpx;
+  width: 100%;
+  height: 120rpx;
+  font-family: PingFang HK;
+  font-style: normal;
+  margin-bottom: 28rpx;
+}
+
+.face .avatar image{
+  padding-left: 24rpx;
+  width: 134rpx;
+  height: 134rpx;
+}
+
+.face .content {
+  padding-left: 22rpx;
+}
+
+.face .content .name {
+  width: 300rpx;
+  height: 44rpx;
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 36rpx;
+  line-height: 50rpx;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.face .content .sign {
+  width: 300rpx;
+  height: 44rpx;
+  margin-top: 12px;
+  font-weight: normal;
+  font-size: 24rpx;
+  line-height: 34rpx;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.icon {
+  margin-top: 10px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon .t {
+  width: 36px;
+  height: 36px;
+}
+
+.icon .text {
+  font-size: 10pt;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.title {
+  display: flex;
+  padding-left: 20rpx;
+  font-size: 28rpx;
+  margin-top: 20rpx;
+  font-family: PingFang HK;
+  font-weight: 600;
+}
+
+.title1 {
+  padding-left: 20rpx;
+  font-size: 28rpx;
+  margin-top: 24rpx;
+  font-family: PingFang HK;
+  font-weight: 600;
+}
+
+
+.bnrs-indic-wrap .indic-focus {
+  background-color: #8d3838;
+}
+
+.functionsicon {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.functionsicon .t {
+  width: 20px;
+  height: 20px;
+}
+
+.functionsicon .content {
+  margin-left: 10px;
+  width: 112rpx;
+  height: 70rpx;
+  font-weight: normal;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.pic {
+  margin-top: 10px;
+  margin-left: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.pic .t {
+  width: 170px;
+  height: 170px;
+}
+
+.pic .text {
+  font-size: 28rpx;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}

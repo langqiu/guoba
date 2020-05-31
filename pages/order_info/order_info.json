@@ -1,6 +1,6 @@
 {
   "usingComponents": {
     "component-navigation-bar": "../components/navigationBar",
-    "component-notice-bar": "../components/noticeBar"
+    "component-input": "../components/input"
   }
 }

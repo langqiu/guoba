@@ -1,2 +1,52 @@
 <!--pages/msg/msg.wxml-->
-<text>pages/msg/msg.wxml</text>
+
+<view class="page">
+
+  <view>
+		<component-navigation-bar fixed="true" back="true"></component-navigation-bar>
+	</view>
+
+ <view style="display: flex">
+      <view class="info">
+        <image class="t"  mode="aspectFit" src="/assets/Me_page/function_t1@3x.png"></image>
+        <text class="content">团购信息</text>
+      </view>
+      <view class="info">
+        <image class="t"  mode="aspectFit" src="/assets/Me_page/function_t2@3x.png"></image>
+        <text class="content">系统信息</text>
+      </view>
+  </view>
+
+  <view style="display: flex: felx: column;">
+    <view class="face">
+      <view class="avatar">
+        <image src="/assets/Me_page/avatar@3x.png"></image>
+      </view>
+      <view class="content">
+        <view class="name">
+          <text>{{infolist.name}}</text>
+        </view>
+         <view class="sign">
+          <text>{{infolist.sign}}</text>
+         </view>
+      </view>
+    </view>
+    <view class="face">
+      <view class="avatar">
+        <image src="/assets/Me_page/avatar@3x.png"></image>
+      </view>
+      <view class="content">
+        <view class="name">
+          <text>{{infolist.name}}</text>
+        </view>
+         <view class="sign">
+          <text>{{infolist.sign}}</text>
+         </view>
+      </view>
+    </view>
+  </view>
+
+
+</view>
+
+   

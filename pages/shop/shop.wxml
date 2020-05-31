@@ -1,8 +1,7 @@
-<!--pages/shop/shop.wxml-->
 <view class="page">
 
 	<view>
-		<component-navigation-bar fixed="true" back="true"></component-navigation-bar>
+		<component-navigation-bar fixed="true" back="true" backStyle="simple"></component-navigation-bar>
 	</view>
 
   <view class="face">
@@ -22,8 +21,6 @@
     </view>
   </view>
 
-  <view class="tmp">
-
   <view wx:if="{{shopCard.notice != ''}}">
     <component-notice-bar content="{{shopCard.notice}}" loop="true" icon="{{noticeIcon}}"></component-notice-bar>
   </view>
@@ -42,6 +39,8 @@
 					</view>
 				</view>
 			</view>
+      <view class="liubai">
+      </view>
 		</scroll-view>
 		<scroll-view class="foods" scroll-y="true" scroll-into-view="order{{toView}}">
 			<view class="box" wx:for="{{menu}}" wx:for-index="parentIndex">
@@ -75,9 +74,9 @@
 					</view>
         </view>
       </view>
+      <view class="liubai">
+      </view>
     </scroll-view>
-  </view>
-
   </view>
 
   <view class="cart">
@@ -94,22 +93,23 @@
     </view>
     <view class="icon">
       <block wx:if="{{totalCount > 0}}">
-        <image src="{{redOrderIcon}}"></image>
+        <image src="{{redOrderIcon}}" bindtap="tapPlaceOrder"></image>
       </block>
       <block wx:else>
         <image src="{{greyOrderIcon}}"></image>
       </block>
     </view>
-    
+    <view class="bottom">
+    </view>
   </view>
 
   <!-- 
-    1. 缓存
+    1. 缓存done
     2. 购物车实现
     3. 滑动菜单联动到左侧
-    4. 菜单栏左侧滑动适配问题
+    4. 菜单栏左侧滑动适配问题done
     5. 点击感应区扩大
-    6. 底边栏设置成白色
+    6. 底边栏设置成白色done
    -->
 
 </view>

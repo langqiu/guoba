@@ -1,0 +1,67 @@
+<view class="page">
+
+	<view>
+		<component-navigation-bar fixed="true" back="true" backStyle="simple"></component-navigation-bar>
+	</view>
+
+  <view class="order">
+	<view wx:for="{{menu}}" wx:for-index="parentIndex">
+		<view wx:for="{{item.foods}}" wx:for-item="food" data-food="{{food}}">
+			<view class="item"  wx:if="{{food.Count > 0}}">
+				<view class="icon">
+					<image src="{{food.icon}}"></image>
+				</view>
+				<view class="content">
+					<view class="name">{{food.name}}</view>
+				  <view class="buy">
+					  <view class="price">
+						  <text>${{food.price}}</text>
+					  </view>
+					  <view class="decrease" wx:if="{{food.Count > 0}}" data-item-index="{{index}}" data-parent-index="{{parentIndex}}" catchtap="decreaseCart">
+						  <image src="{{decreaseIcon}}"></image>
+					  </view>
+					  <view class="food-count" wx:if="{{food.Count > 0}}">
+						  <text>{{food.Count}}</text>
+					  </view>
+					  <view class="add" data-item-index="{{index}}" data-parent-index="{{parentIndex}}" bindtap="addCart">
+						  <image src="{{addIcon}}"></image>
+					  </view>
+				  </view>
+			  </view>
+		  </view>
+	  </view>
+  </view>
+	<view class="liubai">
+	</view>
+	</view>
+
+
+	<view class="cart">
+		<view class="info">
+			<view class="item-count">
+				<text>{{cartItem}}{{totalCount}}</text>
+			</view>
+			<view class="total-price">
+				<text>{{cartTotalPrice}}</text>
+			</view>
+			<view class="number">
+				<text>${{totalPrice}}</text>
+			</view>
+		</view>
+		<view class="icon">
+			<block wx:if="{{totalCount > 0}}">
+				<image src="{{redOrderIcon}}" bindtap="tapPlaceOrder"></image>
+			</block>
+			<block wx:else>
+				<image src="{{greyOrderIcon}}"></image>
+			</block>
+		</view>
+		<view class="bottom">
+    </view>
+	</view>
+
+	<!-- 
+	1. 去掉商品时弹出提示
+	 -->
+
+</view>

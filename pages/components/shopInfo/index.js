@@ -11,7 +11,7 @@ Component({
   methods: {
     tapShop: function() {
       wx.navigateTo({
-        url: '../shop/shop'
+        url: '/pages/shop/shop'
       })
     }
   }

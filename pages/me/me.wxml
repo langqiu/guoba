@@ -1,2 +1,100 @@
-<!--pages/me/me.wxml-->
-<text>pages/me/me.wxml</text>
+
+
+<view class="page">
+
+	<view>
+		<component-navigation-bar fixed="true" back="true"></component-navigation-bar>
+	</view>
+
+  <view class="face">
+    <view class="avatar">
+      <image src="/assets/Me_page/avatar@3x.png"></image>
+    </view>
+    <view class="content">
+      <view class="name">
+        <text>{{userid.name}}</text>
+      </view>
+       <view class="sign">
+        <text>{{userid.sign}}</text>
+      </view>
+    </view>
+  </view>
+
+ <!--  <view style="display;">
+    <view class="title">
+       <text class="title">订单信息</text>
+    </view>
+  </view> -->
+
+  <view style="display: flex;">
+      <view class="icon">
+        <image class="t" mode="aspectFit" src="/assets/Me_page/icon_t1@3x.png"></image>
+        <text class="text">待成团</text>
+      </view>
+      <view class="icon">
+        <image class="t" mode="aspectFit" src="/assets/Me_page/icon_t2@3x.png"></image>
+        <text class="text">待发货</text>
+      </view>
+      <view class="icon">
+        <image class="t" mode="aspectFit" src="/assets/Me_page/icon_t3@3x.png"></image>
+        <text class="text">待收货</text>
+      </view>
+      <view class="icon">
+        <image class="t" mode="aspectFit" src="/assets/Me_page/icon_t4@3x.png"></image>
+        <text class="text">已完成</text>
+      </view>
+  </view>
+
+
+<!--   <view wx:if="{{orderinfo.notice != ''}}">
+    <component-notice-bar content="{{orderinfo.notice}}" loop="true" icon="{{noticeIcon}}"></component-notice-bar>
+  </view> -->
+
+  <view style="height:10px; background-color: #f6f6f6;"></view>
+
+  <view style="display;">
+      <view class="functionsicon">
+        <image class="t" src="/assets/Me_page/function_t1@3x.png"></image>
+        <text class="content">收货地址</text>
+      </view>
+      <view class="functionsicon">
+        <image class="t" src="/assets/Me_page/function_t2@3x.png"></image>
+        <text class="content">会员中心</text>
+      </view>
+      <view class="functionsicon">
+        <image class="t" src="/assets/Me_page/function_t3@3x.png"></image>
+        <text class="content">系统设置</text>
+      </view>
+      <view class="functionsicon">
+        <image class="t" src="/assets/Me_page/function_t4@3x.png"></image>
+        <text class="content">客服</text>
+      </view>
+      <view class="functionsicon">
+        <image class="t" src="/assets/Me_page/function_t5@3x.png"></image>
+        <text class="content">帮助中心</text>
+      </view>
+  </view>
+
+ <view style="height:10px; background-color: #f6f6f6;"></view>
+
+  <view style="display;">
+    <view class="title1">
+       <text class="title1">热门团购</text>
+    </view>
+  </view>
+
+  <view style="display: flex;">
+      <view class="pic">
+        <image class="t" src="/assets/Me_page/pic_1.png"></image>
+        <text class="text">香香海鲜馆</text>
+        <text style="font-size:10pt;color:#656565">$100免运费/$60加$5运费</text>
+      </view>
+      <view class="pic">
+        <image class="t" src="/assets/Me_page/pic_1.png"></image>
+        <text class="text">张家饺王</text>
+        <text style="font-size:10pt;color:#656565">$100免运费/$60加$5运费</text>
+      </view>
+  </view>
+  
+</view>
+

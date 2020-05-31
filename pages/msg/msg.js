@@ -1,13 +1,15 @@
 // pages/msg/msg.js
 Page({
 
-  /**
-   * Page initial data
-   */
+  
   data: {
-
-  },
-
+    infolist: {
+    "name": "张家饺王",
+    "sign": "荠菜水饺全新上市，促销日到6月底，欲购从速",
+    "avatar": "/assets/shop_page/avatar.png"
+    }
+    },
+    
   /**
    * Lifecycle function--Called when page load
    */

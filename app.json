@@ -3,7 +3,9 @@
     "pages/home/home",
     "pages/msg/msg",
     "pages/me/me",
-    "pages/shop/shop"
+    "pages/shop/shop",
+    "pages/place_order/place_order",
+    "pages/order_info/order_info"
   ],
   "window": {
     "navigationBarTextStyle": "black",
